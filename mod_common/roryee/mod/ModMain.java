@@ -1,5 +1,6 @@
 package roryee.mod;
 
+import roryee.mod.block.ModBlocks;
 import roryee.mod.lib.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -14,7 +15,7 @@ public class ModMain {
 
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
-
+        ModBlocks.init();
     }
 
     @Init
